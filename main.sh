@@ -64,7 +64,7 @@ function __get_ip() {
 #Securing /tmp Folder
 secure_tmp(){
   clear
-  f_banner
+  constant_banner
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
   echo -e "\e[93m[+]\e[00m Securing /tmp Folder"
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -121,7 +121,7 @@ config_host() {
 # Update System, Install sysv-rc-conf tool
 update_system(){
    clear
-   f_banner
+   constant_banner
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
    echo -e "\e[93m[+]\e[00m Updating the System"
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -136,7 +136,7 @@ update_system(){
 # Setting a more restrictive UMASK
 restrictive_umask(){
    clear
-   f_banner
+   constant_banner
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
    echo -e "\e[93m[+]\e[00m Setting UMASK to a more Restrictive Value (027)"
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -492,7 +492,7 @@ ENCRYPT_METHOD SHA512
 
 unused_filesystems(){
    clear
-   f_banner
+   constant_banner
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
    echo -e "\e[93m[+]\e[00m Disabling Unused FileSystems"
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -513,7 +513,7 @@ unused_filesystems(){
 # Disable uncommon protocols
 uncommon_netprotocols(){
    clear
-   f_banner
+   constant_banner
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
    echo -e "\e[93m[+]\e[00m Disabling Uncommon Network Protocols"
    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -531,7 +531,7 @@ uncommon_netprotocols(){
 # Tune and Secure Kernel
 tune_secure_kernel(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Tuning and Securing the Linux Kernel"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -708,7 +708,7 @@ IPT_MODULES=\"nf_conntrack_ftp nf_nat_ftp nf_conntrack_netbios_ns\"
 # Install RootKit Hunter
 install_rootkit_hunter(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Installing RootKit Hunter"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -738,7 +738,7 @@ install_rootkit_hunter(){
 tune_nano_vim_bashrc(){
     nanorc=
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Tunning bashrc, nano and Vim"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -982,7 +982,7 @@ set tabstospaces
 # Install PortSentry
 install_portsentry(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Installing PortSentry"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -999,7 +999,7 @@ install_portsentry(){
 # Additional Hardening Steps
 additional_hardening(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Running additional Hardening Steps"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1040,7 +1040,7 @@ additional_hardening(){
 # Install Unhide
 install_unhide(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Installing UnHide"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1059,7 +1059,7 @@ install_unhide(){
 #Tiger is and Auditing and Intrusion Detection System
 install_tiger(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Installing Tiger"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1075,7 +1075,7 @@ install_tiger(){
 
 install_psad(){
       clear
-      f_banner
+      constant_banner
       echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
       echo -e "\e[93m[+]\e[00m Install PSAD"
       echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1114,7 +1114,7 @@ install_psad(){
 # Disable Compilers
 disable_compilers(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Disabling Compilers"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1140,7 +1140,7 @@ disable_compilers(){
 
 file_permissions(){
  clear
-  f_banner
+  constant_banner
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
   echo -e "\e[93m[+]\e[00m Setting File Permissions on Critical System Files"
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1193,7 +1193,7 @@ file_permissions(){
 
 install_sysstat(){
   clear
-  f_banner
+  constant_banner
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
   echo -e "\e[93m[+]\e[00m Installing and enabling sysstat"
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1209,7 +1209,7 @@ install_sysstat(){
 
 install_auditd(){
   clear
-  f_banner
+  constant_banner
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
   echo -e "\e[93m[+]\e[00m Installing auditd"
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1248,7 +1248,7 @@ install_auditd(){
 # Enable Process Accounting
 enable_proc_acct(){
   clear
-  f_banner
+  constant_banner
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
   echo -e "\e[93m[+]\e[00m Enable Process Accounting"
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1261,7 +1261,7 @@ enable_proc_acct(){
 # Install Apache
 install_apache(){
   clear
-  f_banner
+  constant_banner
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
   echo -e "\e[93m[+]\e[00m Installing Apache Web Server"
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1270,26 +1270,10 @@ install_apache(){
   say_done
 }
 
-# Configure and optimize Apache
-secure_optimize_apache(){
-    clear
-    f_banner
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo -e "\e[93m[+]\e[00m Optimizing Apache"
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo ""
-    cp templates/apache /etc/apache2/apache2.conf
-    echo " -- Enabling ModRewrite"
-    spinner
-    a2enmod rewrite
-    service apache2 restart
-    say_done
-}
-
 # Restrict Access to Apache Config Files
 apache_conf_restrictions(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Restricting Access to Apache Config Files"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1309,7 +1293,7 @@ apache_conf_restrictions(){
 # Configure OWASP ModSecurity Core Rule Set (CRS3)
 set_owasp_rules(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Setting UP OWASP ModSecurity Core Rule Set (CRS3)"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1340,7 +1324,7 @@ set_owasp_rules(){
 # Install ModSecurity
 install_modsecurity(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Installing ModSecurity"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1362,7 +1346,7 @@ install_modsecurity(){
 # Configure and optimize Apache
 secure_optimize_apache(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Optimizing Apache"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1425,6 +1409,7 @@ LogLevel warn
 # Include module configuration:
 Include mods-enabled/*.load
 Include mods-enabled/*.conf
+AllowOverride None
 
 # Include ports listing
 Include ports.conf
@@ -1473,7 +1458,7 @@ Header set Referrer-Policy \"no-referrer-when-downgrade" > /etc/apache2/apache2.
 # Install ModEvasive
 install_modevasive(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Installing ModEvasive"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1492,7 +1477,7 @@ install_modevasive(){
     # iptables -D fail2ban-ssh -s IP -j DROP
 install_fail2ban(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Installing Fail2Ban"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1502,10 +1487,102 @@ install_fail2ban(){
     say_done
 }
 
+## Install SSH
+install_ssh() {
+      clear
+      constant_banner
+      echo "Server or client? [server/client]"; read respon
+      if [ "$respon" == "server" ]; then
+            apt install openssh-server
+            spinner
+            clear
+            constant_banner
+            echo "Checking status...."
+            systemctl status ssh
+            echo "Is it active? [y/n]"; read respon
+            if [ "$respon" == "n" ]; then
+                  echo "Well shit. Try again.."
+                  exit
+            fi
+            ufw allow ssh
+      else
+            apt install openssh-client
+      fi
+      ##########################
+      # Sourced from: https://github.com/nvnmo/handy-scripts
+
+      read -p "Enter your server IP:" serverIP # prompt for server IP
+      read -p "Enter your username(requires root privileges):" username # prompt for username
+      printf "\nChanging the default SSH port is one of the easiest\n things you can do to help harden you servers security. \nIt will protect you from robots that are programmed \nto scan for port 22 openings, and commence \ntheir attack."
+      printf "\n"
+      read -p "Do you want to change default SSH port?[Y/n]" -n 1 portChange
+      printf "\n"
+      portNum=0
+      if [[ $portChange =~ ^[Yy]$ ]];then
+      printf "Choose an available port.The port number does not \nreally matter as long as you do no choose something that \nis already in use and falls within the \nport number range."
+      printf "\n"
+      read -p "Port Number:" portNum # a port num to change
+      printf "\n"
+      fi
+      printf "\n"
+      read -p "Do you want to disable root login?[Y/n]" -n 1 rootLogin;printf "\n"
+      read -p "Do you want to change protocol version to 2?[Y/n]" -n 1 protocolChange;printf "\n"
+      read -p "Do you want to enable privilege seperation?[Y/n]" -n 1 privilegeSep;printf "\n"
+      read -p "Do you want to disable empty passwords?[Y/n]" -n 1 emptyPass;printf "\n"
+      read -p "Do you want to disable X11 forwarding?[Y/n]" -n 1 x11Forwarding;printf "\n"
+      read -p "Do you want to enable TCPKeepAlive to avoid zombies?[Y/n]" -n 1 zombies;printf "\n"
+
+
+      echo "cat /etc/ssh/sshd_config > /etc/ssh/sshd_config.bak" > .local_script_$0
+
+      if [[ $portChange =~ ^[Yy]$ ]];then
+      echo "sed \"s/.*Port.*/Port $portNum/\" /etc/ssh/sshd_config > temp" >> .local_script_$0
+      echo "cp temp /etc/ssh/sshd_config" >> .local_script_$0
+      fi
+      if [[ $rootLogin =~ ^[Yy]$ ]];then
+      echo "sed '0,/^.*PermitRootLogin.*$/s//PermitRootLogin no/' /etc/ssh/sshd_config" >> .local_script_$0
+
+      fi
+      if [[ $protocolChange =~ ^[Yy]$ ]];then
+      echo "sed -i \"s/^.*Protocol.*$/Protocol 2/\" /etc/ssh/sshd_config" >> .local_script_$0
+
+      fi
+      if [[ $privilegeSep =~ ^[Yy]$ ]];then
+      echo "sed -i \"s/^.*UsePrivilegeSeparation.*$/UsePrivilegeSeparation yes/\" /etc/ssh/sshd_config" >> .local_script_$0
+
+      fi
+      if [[ $emptyPass =~ ^[Yy]$ ]];then
+      echo "sed -i \"s/^.*PermitEmptyPasswords.*$/PermitEmptyPasswords no/\" /etc/ssh/sshd_config" >> .local_script_$0
+
+      fi
+      if [[ $x11Forwarding =~ ^[Yy]$ ]];then
+      echo "sed -i \"s/^.*X11Forwarding.*$/X11Forwarding no/\" /etc/ssh/sshd_config" >> .local_script_$0
+
+      fi
+      if [[ $zombies =~ ^[Yy]$ ]];then
+      echo "sed -i \"s/^.*TCPKeepAlive.*$/TCPKeepAlive yes/\" /etc/ssh/sshd_config" >> .local_script_$0
+
+      fi
+
+      MYSCRIPT=`base64 -w0 .local_script_$0`
+      ssh -t $username@$serverIP "echo $MYSCRIPT | base64 -d | sudo bash"
+      rm .local_script_$0
+      #####################################
+      say_done
+      say_continue
+}
+
+# # Install postfix
+# install_postfix() {
+
+# }
+
+# Install 
+
 ## Secure SSH
 secure_ssh(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Securing SSH"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1520,7 +1597,7 @@ secure_ssh(){
 # Set IPTABLES Rules
 set_iptables(){
     clear
-    f_banner
+    constant_banner
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
     echo -e "\e[93m[+]\e[00m Setting IPTABLE RULES"
     echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
@@ -1624,6 +1701,53 @@ iptables -A FORWARD -j REJECT
     chmod +x /etc/init.d/iptables.sh
     ln -s /etc/init.d/iptables.sh /etc/rc2.d/S99iptables.sh
     say_done
+    say_continue
+}
+
+# Create Privileged User
+admin_user(){
+    clear
+    constant_banner
+    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
+    echo -e "\e[93m[+]\e[00m We will now Create a New User"
+    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
+    echo ""
+    echo -n " Type the new username: "; read username
+    adduser $username
+    say_done
+}
+
+# Install clamav
+install_clamav() {
+      echo "Installing clamav..."
+      apt-get install clamav clamav-daemon
+      clamscan --version
+      echo "Run scan on home directory? [y/n]"; read respon
+      if [ "$respon" == "y"]; then
+            sudo clamscan --infected --remove --recursive /home
+      fi
+      say_done
+      say_continue
+}
+
+
+# Run through all users and change password
+pass_change() {
+      clear
+      constant_banner
+      echo "DESCRIPTION:"
+      echo "    Run through each user and decide their password fate."
+      for i in $(cat /etc/passwd | cut -d":" -f1); do
+            echo "Change password for $i? [y/n]"; read respon
+            if [ "$respon" == "y" ]; then
+                  passwd $i
+            fi
+            clear
+            constant_banner
+            
+      done
+      spinner
+      say_done
 }
 
 
@@ -1650,12 +1774,15 @@ echo -e "\e[93m[+]\e[00m SELECT THE DESIRED OPTION"
 echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
 echo ""
 echo "1. Configure Host Name, Create Legal Banners, Update Hosts Files"
+echo "2. Change All User Passwords"
 echo "3. Update System"
 echo "4. Create Admin User"
+echo "5. Install ClamAV"
 echo "6. Secure SSH Configuration"
 echo "7. Set Restrictive IPTable Rules"
 echo "8. Install and Configure Fail2Ban"
 echo "9. Install, Optimize and Secure Apache"
+echo "10. Install SSH server/client"
 echo "15. Install ModSecurity (Apache)and Set Owasp Rules"
 echo "16. Install ModEvasive"
 echo "18. Tune and Secure Linux Kernel"
@@ -1680,7 +1807,7 @@ config_host
 ;;
 
 2)
-config_timezone
+pass_change
 ;;
 
 3)
@@ -1692,8 +1819,7 @@ admin_user
 ;;
 
 5)
-rsa_keygen
-rsa_keycopy
+install_clamav
 ;;
 
 6)
@@ -1721,8 +1847,7 @@ apache_conf_restrictions
 ;;
 
 10)
-install_nginx_modsecurity
-set_nginx_modsec_OwaspRules
+install_ssh
 ;;
 
 11)
@@ -1851,12 +1976,12 @@ echo -e "\e[34m-----------------------------------------------------------------
 echo -e "\e[93m[+]\e[00m SELECT YOUR LINUX DISTRIBUTION"
 echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
 echo ""
-echo "1. Ubuntu Server 16.04 LTS"
-echo "2. Ubuntu Server 18.04 LTS"
-echo "3. Linux CentOS 7 "
-echo "4. Solaris"
-echo "5. Debian"
-echo "6. Fedora/Redhat"
+echo "1. Ubuntu Server 16.04 LTS/18.04"
+# echo "2. Ubuntu Server 18.04 LTS"
+# echo "3. Linux CentOS 7 "
+# echo "4. Solaris"
+# echo "5. Debian"
+# echo "6. Fedora/Redhat"
 echo "7. Exit"
 echo
 
@@ -1869,7 +1994,8 @@ ubuntu_sixteen
 ;;
 
 2) #Ubuntu 18.04
-ubuntu_eighteen
+# ubuntu_eighteen
+ubuntu_sixteen
 ;;
 
 3) #CentOS <ver>
